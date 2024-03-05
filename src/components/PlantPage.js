@@ -41,7 +41,7 @@ function PlantPage() {
     })
       .then((response) => response.json()) // Parse the response JSON
       .then((data) => {
-        // Update local state with the newly added plant
+       
         setPlants([...plants, data]);
         setFilteredPlants([...filteredPlants, data]);
       });
